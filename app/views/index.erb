@@ -1,0 +1,7 @@
+<h1>hi and welcome to the generic app</h1>
+<h2>this generic app has these generic users</h2>
+<ul>
+  <% @users.each do |user| %>
+  <li><a href="/users/#{user.id}"></a><%= user.name %></li>
+  <% end %>
+</ul>
